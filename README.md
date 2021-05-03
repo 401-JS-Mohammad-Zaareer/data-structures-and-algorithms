@@ -1,14 +1,11 @@
-# data-structures-and-algorithms
-Code challenges and algorithms for code 401 course 
-
-# Reverse an Array
-Create a function that return array in reverse order
+# Inserting into Array
+Create a function that add a new value at the middle index
 
 ## Challenge
-Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
 ## Approach & Efficiency
-* I used a for loop to iterate over the elements of the array starting form last element and push each one in a new local array and then finally return the new array created.
+* I get the middle index to insert the value at and then iterate over the array to copy each value into the shifted new array.
 
 * I used a for loop because I need to go over each element in the origin array so I can store it in the new one.
 
@@ -16,4 +13,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 - Space Complexity: O(n)
 
 ## Solution
-![Whiteboard Challenge Workflow](assets/array-reverse.PNG)
+![Whiteboard Challenge Workflow](assets/array-shift.jpeg)
