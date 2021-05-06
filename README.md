@@ -1,4 +1,4 @@
-# Code Challenges - 401 course
+# Code Challenges and Algorithms- 401 Course
 
 ## Table of Contents  
 |No|Topic|
