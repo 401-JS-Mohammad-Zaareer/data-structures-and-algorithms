@@ -1,5 +1,8 @@
-# 401 Code Challenges
+# Code Challenges - 401 course
 
-## challenge-01: [Array Reverse](challenges/arrayReverse)
-## challenge-02: [Array Shift](challenges/arrayShift)
-
+## Table of Contents  
+|No|Topic|
+|--|-----|
+|1|[ReverseArray](challenges/arrayReverse)|
+|2|[InsertShiftArray](challenges/arrayShift)|
+|3|[BinarySearch]()|
