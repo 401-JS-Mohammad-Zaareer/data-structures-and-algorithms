@@ -16,4 +16,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 - Space Complexity: O(n)
 
 ## Solution
-![Whiteboard Challenge Workflow](assets/array-reverse.PNG)
+![Whiteboard Challenge Workflow](../../assets/array-reverse.PNG)
