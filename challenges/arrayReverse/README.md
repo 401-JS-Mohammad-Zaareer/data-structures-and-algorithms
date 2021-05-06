@@ -1,6 +1,3 @@
-# data-structures-and-algorithms
-Code challenges and algorithms for code 401 course 
-
 # Reverse an Array
 Create a function that return array in reverse order
 
@@ -17,3 +14,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ## Solution
 ![Whiteboard Challenge Workflow](../../assets/array-reverse.PNG)
+
