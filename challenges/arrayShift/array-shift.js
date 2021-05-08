@@ -22,4 +22,3 @@ const getMiddleIndex = (array) => {
 }
 
 module.exports = insertShiftArray;
-console.log(insertShiftArray([4, 8, 15, 23, 42], 16));

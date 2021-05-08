@@ -4,14 +4,14 @@
     "description": "code challenges and algorithms for code 401 course",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest --coverage --verbose"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/401-JS-Mohammad-Zaareer/data-structures-and-algorithms.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "Mohammad Za'areer",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/401-JS-Mohammad-Zaareer/data-structures-and-algorithms/issues"
