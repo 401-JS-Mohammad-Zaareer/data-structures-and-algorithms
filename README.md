@@ -6,4 +6,4 @@
 |1|[ReverseArray](challenges/arrayReverse)|
 |2|[InsertShiftArray](challenges/arrayShift)|
 |3|[BinarySearch](challenges/arrayBinarySearch)|
-|5|[SLL implementation](Data-Structures/linkedList)|
+|4|[SLL implementation](Data-Structures/linkedList)|
