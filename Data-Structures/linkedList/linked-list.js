@@ -91,6 +91,34 @@ class LinkedList {
             throw new Error(`${value} does not exist in the LL`);
         }
     }
+
+    isEmpty() {
+        return this.head === null ? true : false;
+    }
+
+    kthFromEnd(k) {
+        let target = this.head;
+        let current = this.head;
+        let counter = k;
+        if (this.isEmpty()) {
+            throw new Error('Empty Linked List!');
+        }
+        if (k < 0) {
+            throw new Error('Negative not allowed!');
+        }
+        while (current.next) {
+            current = current.next;
+            if (counter > 0) {
+                counter--;
+            } else {
+                target = target.next;
+            }
+        }
+        if (counter > 0) {
+            throw new Error('K is out of range!');
+        }
+        return target.value;
+    }
 }
 
 module.exports = {
@@ -98,23 +126,7 @@ module.exports = {
     LinkedList
 }
 
-// creating a new empty SLL
-const linkedList = new LinkedList();
+const ll = new LinkedList();
 
-// insert a new node
-linkedList.insert(5);
-
-// append a new node
-linkedList.append(6);
-
-// insert before a node
-linkedList.insertBefore(5, 4);
-
-// insert after node
-linkedList.insertAfter(6, 3);
-
-// check if 9 is in the ll
-linkedList.includes(9);
-
-// return ll as formated string
-console.log(linkedList.toString());
+ll.insert(3);
+console.log(ll.kthFromEnd(0));

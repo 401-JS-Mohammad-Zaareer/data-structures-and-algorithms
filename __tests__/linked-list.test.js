@@ -86,4 +86,35 @@ describe('Testing LinkedList class', () => {
         newLL.insertAfter(8, 5);
         expect(newLL.toString()).toEqual('{6}->{4}->{7}->{8}->{5}->NULL');
     });
+    it('throw exception when k is greater than the length of the linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        expect(() => newLL.kthFromEnd(10)).toThrow('K is out of range!');
+    });
+    it('Works properly when k and the length of the list are the same', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(5);
+        newLL.insert(8);
+        expect(() => newLL.kthFromEnd(10)).toThrow('K is out of range!');
+    });
+    it('Return exception when k < 0', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        expect(() => newLL.kthFromEnd(-3)).toThrow('Negative not allowed!');
+    });
+    it('Works properly when the linked list is of a size 1', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        expect(newLL.kthFromEnd(0)).toEqual(4);
+    });
+    it('Works properly when k in the middle of the linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(5);
+        newLL.insert(6);
+        newLL.insert(7);
+        expect(newLL.kthFromEnd(2)).toEqual(6);
+
+    });
 });
