@@ -8,3 +8,4 @@
 |3|[BinarySearch](challenges/arrayBinarySearch)|
 |4|[SLL implementation](Data-Structures/linkedList)|
 |6|[SLL insertions](Data-Structures/linkedList)|
+|7|[kthFromEnd](Data-Structures/linkedList)|
