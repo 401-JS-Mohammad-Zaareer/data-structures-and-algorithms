@@ -9,6 +9,7 @@ Implement singly linked list data structure and the following basic operations o
 * append()
 * insertBefore()
 * insertAfter()
+* kthFromEnd()
 
 ## Approach & Efficiency  
 
@@ -19,7 +20,8 @@ Implement singly linked list data structure and the following basic operations o
 |toString()|iterate over ll|time:O(n), space:O(1)|
 |append()|traverse the ll until reach last node then add|time:O(n), space:O(1)|
 |insertBefore()|traverse the ll using two pointers|time:O(n), space:O(1)|
-|insertAfter|traverse the ll until reach the location required|time:O(n), space:O(1)|
+|insertAfter()|traverse the ll until reach the location required|time:O(n), space:O(1)|
+|kthFromEnd()|travserse the ll (ll.length - k) times then return the value|time:O(n), space:O(1)|
 
 ## Whiteboard Process
 * insert() 
@@ -36,6 +38,7 @@ Implement singly linked list data structure and the following basic operations o
 4. append(value) -> adds a new node with the given value to the end of the list.  
 5. insertBefore(value, newValue) -> add a new node with the given newValue immediately before the first value node.  
 6. insertAfter() -> add a new node with the given newValue immediately after the first value node.  
+7. kthFromEnd(k) -> return the node’s value that is k from the end of the linked list
 
 ## Solution
 ```javascript
@@ -59,4 +62,6 @@ Implement singly linked list data structure and the following basic operations o
 
     // return ll as formated string
     ll.toString(); // {4}->{5}->{6}->{3}->NULL
+
+    ll.kthFromEnd(1); // return 6
 ```
