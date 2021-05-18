@@ -7,3 +7,4 @@
 |2|[InsertShiftArray](challenges/arrayShift)|
 |3|[BinarySearch](challenges/arrayBinarySearch)|
 |4|[SLL implementation](Data-Structures/linkedList)|
+|6|[SLL insertions](Data-Structures/linkedList)|
