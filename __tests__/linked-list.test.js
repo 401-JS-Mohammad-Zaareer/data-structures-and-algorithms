@@ -36,5 +36,54 @@ describe('Testing LinkedList class', () => {
         newLL.insert(4);
         newLL.insert(6);
         expect(newLL.toString()).toEqual('{6}->{4}->NULL')
-    })
+    });
+    it('Can successfully add a node to the end of the linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(6);
+        newLL.append(7);
+        expect(newLL.toString()).toEqual('{6}->{4}->{7}->NULL');
+    });
+    it('Can successfully add multiple nodes to the end of a linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(6);
+        newLL.append(7);
+        newLL.append(8);
+        expect(newLL.toString()).toEqual('{6}->{4}->{7}->{8}->NULL');
+    });
+    it('Can successfully insert a node before a node located i the middle of a linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(6);
+        newLL.append(7);
+        newLL.append(8);
+        newLL.insertBefore(7, 5);
+        expect(newLL.toString()).toEqual('{6}->{4}->{5}->{7}->{8}->NULL');
+    });
+    it('Can successfully insert a node before the first node of a linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(6);
+        newLL.insertBefore(6, 5);
+        expect(newLL.toString()).toEqual('{5}->{6}->{4}->NULL');
+    });
+    it('Can successfully insert after a node in the middle of the linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(6);
+        newLL.append(7);
+        newLL.append(8);
+        newLL.insertAfter(7, 5);
+        expect(newLL.toString()).toEqual('{6}->{4}->{7}->{5}->{8}->NULL');
+    });
+    it('Can successfully insert a node after the last node of the linked list', () => {
+        const newLL = new LinkedList();
+        newLL.insert(4);
+        newLL.insert(6);
+        newLL.append(7);
+        newLL.append(8);
+        newLL.insertAfter(8, 5);
+        expect(newLL.toString()).toEqual('{6}->{4}->{7}->{8}->{5}->NULL');
+    });
 });
