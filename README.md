@@ -9,3 +9,4 @@
 |4|[SLL implementation](Data-Structures/linkedList)|
 |6|[SLL insertions](Data-Structures/linkedList)|
 |7|[kthFromEnd](Data-Structures/linkedList)|
+|8|[Zip two ll](challenges/llZip)|
