@@ -127,6 +127,3 @@ module.exports = {
 }
 
 const ll = new LinkedList();
-
-ll.insert(3);
-console.log(ll.kthFromEnd(0));
