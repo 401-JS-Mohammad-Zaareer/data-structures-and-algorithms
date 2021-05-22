@@ -11,3 +11,4 @@
 |7|[kthFromEnd](Data-Structures/linkedList)|
 |8|[Zip two ll](challenges/llZip)|
 |9|[plindrome ll](challenges/palindrom)|
+|10|[Stack & Queue implementation](Data-Structures/stacksAndQueues)|
