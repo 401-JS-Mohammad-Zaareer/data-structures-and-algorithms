@@ -10,3 +10,4 @@
 |6|[SLL insertions](Data-Structures/linkedList)|
 |7|[kthFromEnd](Data-Structures/linkedList)|
 |8|[Zip two ll](challenges/llZip)|
+|9|[plindrome ll](challenges/palindrom)|
