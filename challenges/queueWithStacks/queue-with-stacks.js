@@ -26,3 +26,5 @@ class PseudoQueue {
         return temp;
     };
 }
+
+module.exports = PseudoQueue;
