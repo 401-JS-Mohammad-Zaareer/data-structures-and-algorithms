@@ -12,3 +12,4 @@
 |8|[Zip two ll](challenges/llZip)|
 |9|[plindrome ll](challenges/palindrom)|
 |10|[Stack & Queue implementation](Data-Structures/stacksAndQueues)|
+|11|[PseudoQueue](challenges/queueWithStacks)|
