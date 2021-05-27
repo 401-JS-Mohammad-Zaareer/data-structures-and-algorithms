@@ -13,3 +13,4 @@
 |9|[plindrome ll](challenges/palindrom)|
 |10|[Stack & Queue implementation](Data-Structures/stacksAndQueues)|
 |11|[PseudoQueue](challenges/queueWithStacks)|
+|12|[AnimalShelter](challenges/fifoAnimalShelter)|
