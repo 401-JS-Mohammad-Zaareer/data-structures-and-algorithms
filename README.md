@@ -14,3 +14,4 @@
 |10|[Stack & Queue implementation](Data-Structures/stacksAndQueues)|
 |11|[PseudoQueue](challenges/queueWithStacks)|
 |12|[AnimalShelter](challenges/fifoAnimalShelter)|
+|13|[multi-bracket validation](challenges/multiBracketValidation)|
