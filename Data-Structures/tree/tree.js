@@ -54,6 +54,22 @@ class BinaryTree {
         traverse(this.root);
         return values;
     }
+
+    findMaximumValue() {
+        if(!this.root) {
+            throw new Error('Empty Tree');
+        }
+        let max = this.root.value;
+        const traverse = (node) => {
+            if(node.value > max) {
+                max = node.value;
+            }   
+            if(node.left) traverse(node.left);
+            if(node.right) traverse(node.right);
+        }
+        traverse(this.root);
+        return max;
+    }
 }
 
 class BinarySearchTree  extends BinaryTree {
@@ -109,18 +125,3 @@ module.exports = {
   Node, BinaryTree, BinarySearchTree   
 } 
 
-const bst = new BinarySearchTree();
-bst.root = new Node(8);
-bst.add(10);
-bst.add(3);
-bst.add(1);
-bst.add(6);
-bst.add(4);
-bst.add(7);
-bst.add(14);
-bst.add(13);
-
-
-console.log(bst);
-console.log(bst.root.right.right.left);
-console.log(bst.contains(100));
