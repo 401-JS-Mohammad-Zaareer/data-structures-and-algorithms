@@ -26,4 +26,7 @@ describe('Testing Tree', ()=> {
     it('Can successfully return a collection from a postorder traversal', ()=>{
         expect(BST.postOrder()).toEqual([7, 10, 8]);
     });
+    it('Can successfully return the maximum value', ()=>{
+        expect(BST.findMaximumValue()).toEqual(10);
+    })
 })
