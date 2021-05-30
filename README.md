@@ -17,4 +17,4 @@
 |13|[multi-bracket validation](challenges/multiBracketValidation)|
 |14|[DuckDuckGoose](challenges/duckDuckGoose)|
 |15|[Tree](Data-Structures/tree)|
-|16|[Max value / Tree](Data-Structures/tree)|
+|16|[Max value/Tree](Data-Structures/tree)|
