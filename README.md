@@ -16,4 +16,4 @@
 |12|[AnimalShelter](challenges/fifoAnimalShelter)|
 |13|[multi-bracket validation](challenges/multiBracketValidation)|
 |14|[DuckDuckGoose](challenges/duckDuckGoose)|
-|15|[Tree](Data-Structures/tree/tree.js)|
+|15|[Tree](Data-Structures/tree)|
