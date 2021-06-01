@@ -1,5 +1,7 @@
 'use strict';
 
+const Queue = require('../stacksAndQueues/stacks-and-queues').Queue;
+
 class Node {
     constructor(value, left=null, right=null) {
         this.value = value;
@@ -70,6 +72,23 @@ class BinaryTree {
         traverse(this.root);
         return max;
     }
+
+    breadthFirstTraversal() {
+        if(!this.root) {
+            throw new Error('Empty Tree!');
+        }
+        const queue = new Queue();
+        const values = [];
+        queue.enqueue(this.root);
+        while(!queue.isEmpty()) {
+            const parentNode = queue.front;
+            if(parentNode.value.left) queue.enqueue(parentNode.value.left);
+            if(parentNode.value.right) queue.enqueue(parentNode.value.right);
+            values.push(parentNode.value.value);
+            queue.dequeue();
+        }   
+        return values;
+    }
 }
 
 class BinarySearchTree  extends BinaryTree {
@@ -122,6 +141,19 @@ class BinarySearchTree  extends BinaryTree {
 
 
 module.exports = {
-  Node, BinaryTree, BinarySearchTree   
+    Node, BinaryTree, BinarySearchTree   
 } 
 
+
+const bt = new BinaryTree();
+
+bt.root = new Node(2);
+bt.root.left = new Node(7);
+bt.root.right = new Node(5);
+bt.root.left.left = new Node(2);
+bt.root.left.right = new Node(6);
+bt.root.right.right = new Node(9);
+bt.root.right.right.left = new Node(4);
+bt.root.left.right.left = new Node(5);
+bt.root.left.right.right = new Node(11);
+console.log(bt.breadthFirstTraversal().toString());

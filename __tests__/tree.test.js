@@ -28,5 +28,19 @@ describe('Testing Tree', ()=> {
     });
     it('Can successfully return the maximum value', ()=>{
         expect(BST.findMaximumValue()).toEqual(10);
+    });
+    it('Can traverse by Breadth first ALgorithm', ()=> {
+        const bt = new BinaryTree();
+        bt.root = new Node(2);
+        bt.root.left = new Node(7);
+        bt.root.right = new Node(5);
+        bt.root.left.left = new Node(2);
+        bt.root.left.right = new Node(6);
+        bt.root.right.right = new Node(9);
+        bt.root.right.right.left = new Node(4);
+        bt.root.left.right.left = new Node(5);
+        bt.root.left.right.right = new Node(11);
+
+        expect(bt.breadthFirstTraversal()).toEqual([2,7,5,2,6,9,5,11,4]);
     })
 })
