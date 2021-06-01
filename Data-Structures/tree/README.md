@@ -6,11 +6,16 @@ A tree data structure can be defined recursively as a collection of nodes (start
 implement binary treee and binary search tree
 
 ## Whitboard
-![whitbpard](../../assets/findMaximumValue.png)
+* findMaximumValue()  
+![whitboard](../../assets/findMaximumValue.png)
+
+* breadthFirstTraversal()
+![whitboard](../../assets/breadthFirstTraversal.png)
 ## API
 preOrder()  
 inOrder()  
 postOrder()  
 add()  
-contains()
-findMaximumValue()
+contains()  
+findMaximumValue()  
+breadthFirstTraversal()
