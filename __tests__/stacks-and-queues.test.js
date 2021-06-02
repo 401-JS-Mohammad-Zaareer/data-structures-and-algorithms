@@ -63,8 +63,4 @@ describe('Testing Queue Data Structure', ()=>{
         queue.dequeue();
         expect(queue.front).toBe(null);
     });
-    it('Calling dequeue or peek on empty queue raises exception',()=>{
-        expect(()=>(new Queue()).dequeue()).toThrow();
-        expect(()=>(new Queue()).peek()).toThrow();
-    });
 });
