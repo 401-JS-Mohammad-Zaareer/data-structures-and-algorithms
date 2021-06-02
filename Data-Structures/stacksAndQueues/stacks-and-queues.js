@@ -82,7 +82,7 @@ class Queue {
     };
     dequeue(){
         if(!this.front) {
-            throw new Error('empty stack!');
+            return null;
         }
         if(this.front === this.tail){
             this.tail = null;
