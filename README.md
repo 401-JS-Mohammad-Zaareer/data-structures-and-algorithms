@@ -18,4 +18,4 @@
 |14|[DuckDuckGoose](challenges/duckDuckGoose)|
 |15|[Tree](Data-Structures/tree)|
 |16|[Max value/Tree](Data-Structures/tree)|
-|16|[breadth first traversal](Data-Structures/tree)|
+|17|[breadth first traversal](Data-Structures/tree)|
