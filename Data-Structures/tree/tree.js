@@ -143,17 +143,3 @@ class BinarySearchTree  extends BinaryTree {
 module.exports = {
     Node, BinaryTree, BinarySearchTree   
 } 
-
-
-const bt = new BinaryTree();
-
-bt.root = new Node(2);
-bt.root.left = new Node(7);
-bt.root.right = new Node(5);
-bt.root.left.left = new Node(2);
-bt.root.left.right = new Node(6);
-bt.root.right.right = new Node(9);
-bt.root.right.right.left = new Node(4);
-bt.root.left.right.left = new Node(5);
-bt.root.left.right.right = new Node(11);
-console.log(bt.breadthFirstTraversal().toString());
