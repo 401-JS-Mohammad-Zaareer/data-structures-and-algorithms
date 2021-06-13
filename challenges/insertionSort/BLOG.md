@@ -31,11 +31,11 @@ In the second pass, we breake out of the while because the condition is not met,
 **Pass 3**:  
 ![pass 3](../../assets/pass3.png)  
 In the third pass also the next number is greter than the one before it, so the while will not run and we stick to latest change.  
-**Pass 4**:
+**Pass 4**:  
 ![pass 4](../../assets/pass4.png)
 In the fourth pass, the next number at index 4 is less than the number at index 3, so iy's changed to 42 and also it's smaller than the unmber at index 2.  
 **Pass 5**:  
-![pass 4](../../assets/pass5.png)
+![pass 4](../../assets/pass5.png)  
 
 ## Efficency
 * Time: O(n*n)
