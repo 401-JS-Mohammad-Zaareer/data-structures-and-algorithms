@@ -21,3 +21,4 @@
 |17|[breadth first traversal](Data-Structures/tree)|
 |18|[Fizz Buzz Tree](challenges/fizzBuzzTree)|
 |19|[Sum of numbers in a binary tree](challenges/sumNumbersBT)|
+|20|[Insertion Sort](challenges/insertionSort)|
