@@ -1,6 +1,7 @@
 # Code Challenges and Algorithms- 401 Course
 
 ## Table of Contents  
+
 |No|Topic|
 |--|-----|
 |1|[ReverseArray](challenges/arrayReverse)|
@@ -22,3 +23,4 @@
 |18|[Fizz Buzz Tree](challenges/fizzBuzzTree)|
 |19|[Sum of numbers in a binary tree](challenges/sumNumbersBT)|
 |20|[Insertion Sort](challenges/insertionSort)|
+|21|[Merge Sort](challenges/mergeSort)|
